@@ -64,7 +64,7 @@ public class PracticeFormSteps {
         lastNameField.sendKeys(apellido);
     }
 
-    @And("el usuario ingresa {string} como su email")
+    @And("el usuario ingresa {string} como email")
     public void elUsuarioIngresaComoEmail(String email) {
         WebElement emailField = driver.findElement(By.id("userEmail"));
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", emailField);
@@ -80,7 +80,7 @@ public class PracticeFormSteps {
         js.executeScript("arguments[0].click();", genderLabel);
     }
 
-    @And("el usuario ingresa {string} como su número móvil")
+    @And("el usuario ingresa {string} como número móvil")
     public void elUsuarioIngresaComoNumeroMovil(String numero) {
         WebElement mobileField = driver.findElement(By.id("userNumber"));
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", mobileField);
